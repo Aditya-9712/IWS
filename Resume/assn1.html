@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+
+.first_appear h2 
+{
+color: ; 
+  /*font-family: "Courier";*/
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+	font-family: 'Lato', sans-serif;
+}
+/*
+.second_appear h1
+{
+color: black; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+  font-family: 'Lato', sans-serif;
+}
+
+*/
+h1:nth-child(1){
+  animation: type2 4s steps(50, end);
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+/*h1
+{
+	size: 10px;
+}*/
+
+/*
+@keyframes type
+ {
+	from { width: 0 }
+	to {width: 100%}
+}
+
+@keyframes blink-cursor
+{
+	from, to {border-color: transparent}
+	50% { border-color: black }
+}*/
+
+
+
+/*@keyframes type 
+{
+	from { width: 0 }
+	to {width: 100%}
+}
+
+@keyframes blink-caret
+{
+	from, to {border-color: transparent}
+	50% { border-color: black }
+}
+*/
+#third_appear
+{
+display: block;
+font-family: 'Lato', sans-serif;
+}
+#cv
+{
+display: block;
+font-family: 'Titillium Web', sans-serif;
+}
+
+td, th
+{
+	border: solid 2px;
+	text-align: center;
+	padding: 4px;
+}
+tr
+{
+	border-collapse: collapse;
+}
+
+body
+{
+	background: #FDEBD0;
+}
+
+.headings
+{
+	font-size: 20px;
+}
+</style>
+
+<head>
+
+<title> Aditya | Profile Page </title>
+<link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web" rel="stylesheet">
+</head>
+
+<body id="mybody">
+<img style = "position: absolute; margin-left:500px; margin-top: -10px; width: 150px; float: right" src="mypic.jpg">
+<img style = "position: absolute; margin-left:900px; margin-top: -10px; width: 400px; float: right" src="snu_logo.jpg">
+
+<div class="first_appear">
+<h2>Hello!</h2>
+<h2> I'm K.A.Aditya </h2>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+<div id="cv">
+
+<h3> Academic Details <h3>
+
+<table style="width: 100%;">
+  <tr>
+  <div class="headings">
+    <th>Name of Institution</th>
+    <th>Name of Course/Board</th> 
+    <th>Year</th>
+    <th>Percentage/CGPA</th>
+    </div>
+  </tr>
+  <tr>
+    <td>Shiv Nadar University</td>
+    <td>B.tech Computer Science and Engineering</td> 
+    <td>2018</td>
+    <td>7.6</td>
+  </tr>
+  <tr>
+    <td>D A V Boys Sr. Sec. School</td>
+    <td>Higher Secondary School(CBSE)</td> 
+    <td>2014</td>
+    <td>92.2%</td>
+  </tr>
+  <tr>
+    <td>D A V Boys Sr. Sec. School</td>
+    <td>Senior Secondary School(CBSE)</td> 
+    <td>2012</td>
+    <td>CGPA 10</td>
+  </tr>
+</table>
+<br />
+<h3> Projects and Experience <h3>
+
+<ul>
+<li> Developed a FOOTBALL SIMULATOR as part of final year high school project in C++ </li>
+<li> Attended a workshop conducted by TATA CONSULTANCY SERVICES</li>
+<li> Participated in Inter-school competitions like the National Cyber Olympiad, Zonal Informatics Olympiad</li>
+<li> Completed course in C, C++, Data Structures from NIIT, Chennai</li>
+<li> Worked on a Computer Science project to create an offline Transport Management System, providing travel plans
+(Transport, Accommodation, Tourism) to user, based on programming inputs, as a part of the Data Structures Course in
+the University</li>
+<li> Worked on Profile Page / Blog creation as part of Introduction to Modern App Development Online course offered by
+NPTEL (IIT MADRAS & HASURA). Ranked in the top 5% in the course (All India)</li>
+</ul>
+
+<h3> Achievements and Activities <h3>
+
+<ul>
+<li> Winner of the CNBC AWAAZ - Responsibility Aur Rupaiya Quiz, Intra-school round </li>
+<li> Winner of the MetLife - I want to be an Editor Quiz, Intra-school round</li>
+<li> Participated in many other Inter-School Quiz contests like the NIIT Quiz, TCS Quiz</li>
+<li> Attended Robotics workshop conducted by Robotix and successfully completed building a “Line follower Bot”</li>
+
+</ul>
+
+<h3> Skills <h3>
+
+<ul>
+<li> Software: MS Office (Word, Excel, PowerPoint, Access, Outlook, Visio), Adobe (Photoshop, Light Room) </li>
+<li> Operating Systems: Windows XP, 7, 8; Ubuntu 14.04; Mac OSX</li>
+<li> Participated in Inter-school competitions like the National Cyber Olympiad, Zonal Informatics Olympiad</li>
+<li> Programming IDEs: Turbo C, Code::Blocks</li>
+<li> Programming Languages: C++ (5 years), C, Java, JavaScript, MySQL, HTML, PHP</li>
+
+</ul>
+
+
+<h3> Internship Experience <h3>
+
+<ul>
+<li> Web Development Intern at QuarkMe (March 2017 – Present) </li>
+<li> Web Development Intern at Hasura (May 2017 – Present) </li>
+</ul>
+
+<h3> Extracurricular Activities <h3>
+
+<ul>
+<li> Secretary of the ACM campus chapter </li>
+<li> Captain (former), DAV basketball team</li>
+</ul>
+
+<h3> Interests and Hobbies <h3>
+
+<ul>
+<li> Basketball, Music, Competitive programming </li>
+</ul>
+
+<h3> Contact <h3>
+
+<ul>
+<li> Ph: 7299467224 </li>
+<li> Email: ak770@snu.edu.in</li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+
+var mybody = document.getElementById("mybody");
+
+mybody.onload =	setTimeout( function() {
+    var first = document.getElementById("first_appear");
+    first.style.display="block"; 
+},800);
+mybody.onload =	setTimeout( function() {
+    var second = document.getElementById("second_appear");
+    second.style.display="block";
+},1300);
+// mybody.onload =	setTimeout( function() {
+//     var third = document.getElementById("third_appear");
+//     third.style.display="block";
+// },1800);
+mybody.onload =	setTimeout( function() {
+    var cv = document.getElementById("cv");
+    cv.style.display="block";
+},2300);
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
