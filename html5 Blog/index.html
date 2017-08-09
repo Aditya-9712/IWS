@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>Assignment 2</title>
+
+
+<style>
+
+
+ul
+{
+	overflow: hidden;
+	list-style-type: none;
+	margin-top: 50px;
+	padding: 0;
+	/*width: 300%;*/
+	opacity: 1;
+	/*margin-bottom: 10px;*/
+}
+
+li
+{
+	float: left;
+	width: 200px;
+}
+
+li a
+{
+	font-family: 'Titillium Web', sans-serif;
+
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 15px;
+	background: black;
+	text-decoration: none;
+}
+
+li a:hover
+{
+	background: red;
+}
+
+nav
+{
+	text-align:center;
+	margin-left: 20%;
+}
+
+.page_header
+{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	background: grey;
+	padding-bottom: 3px;
+}
+
+
+#section1
+{
+	width: 50%;
+	border: solid 2px;
+	padding: 20px 20px 20px 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	max-height: 125px;
+}
+
+#section2
+{
+	width: 50%;
+	border: solid 2px;
+	padding: 20px 20px 20px 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	max-height: 125px;
+}
+
+#section3
+{
+	width: 50%;
+	border: solid 2px;
+	padding: 20px 20px 20px 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	max-height: 125px;
+}
+
+
+
+
+#ads_links
+{
+	float: right;
+	position: absolute;
+	margin-left: 900px;
+	margin-top: -500px; 
+	border: solid 2px;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif; 
+}
+
+.article_heading
+{
+	font-family: 'PT Sans', sans-serif;
+
+}
+
+.article_content
+{
+font-family: 'Raleway', sans-serif;
+
+}
+
+#button1
+{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	padding: 5px 5px;
+	display:block;
+	float: right;
+	position: absolute;
+	margin-left: 510px;
+	margin-top: -30px;
+}
+#button2
+{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	padding: 5px 5px;
+	display:block;
+	float: right;
+	position: absolute;
+	margin-left: 510px;
+	margin-top: -30px;
+}
+#button3
+{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	padding: 5px 5px;
+	display:block;
+	float: right;
+	position: absolute;
+	margin-left: 510px;
+	margin-top: -30px;
+}
+</style>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web|PT+Sans|Raleway" rel="stylesheet">
+
+
+</head>
+
+
+
+
+<body>
+
+
+<header class="page_header">
+	
+<h1>Welcome to Aditya'a Blog</h1>
+
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Sign Up</a></li>
+		
+	</ul>
+</nav>
+
+
+</header>
+
+<!-- <section class="section">
+	
+<header>
+<h1>
+	Article One
+</h1>
+</header>
+
+	
+	<article>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+
+
+	</article>
+
+
+</section> -->
+
+
+<section id="section1">
+	
+<header>
+<h1 class="article_heading">
+	Article One
+</h1>
+<br />
+<button id="button1" onclick="showart1()">Show Full Article</button>
+</header>
+
+	
+	<article class="article_content">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+
+
+	</article>
+
+
+</section>
+
+<section id="section2">
+	
+<header>
+<h1 class="article_heading">
+	Article Two
+</h1>
+<br />
+<button id="button2" onclick="showart2()">Show Full Article</button>
+</header>
+
+	
+	<article class="article_content">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+
+
+	</article>
+
+
+</section>
+
+
+
+<section id="section3">
+	
+<header>
+<h1 class="article_heading">
+	Article Three
+</h1>
+<br />
+<button id="button3" onclick="showart3()">Show Full Article</button>
+</header>
+
+	
+	<article class="article_content">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper urna in massa malesuada, nec pretium risus interdum. Duis eget enim viverra, viverra sapien non, scelerisque risus. Vestibulum lacinia sit amet est quis consectetur. Sed in bibendum odio. Pellentesque ac urna consectetur, hendrerit urna efficitur, efficitur leo. Aliquam massa velit, convallis vel velit quis, rhoncus aliquet odio. Pellentesque sit amet justo dolor.
+
+
+	</article>
+
+
+</section>
+
+
+
+<aside id="ads_links">
+
+	<figure>
+  <img src="sample.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>This is an advertisement</figcaption>
+</figure>
+
+<h2> Visit my other blogs </h2>
+<a href="#"> Nature Blog </a><br />
+<a href="#"> Photography Blog </a><br />
+<a href="#"> Racing Blog </a>
+
+
+<figure>
+  <img src="sample.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>This is an advertisement</figcaption>
+</figure>
+	
+
+</aside>
+
+
+
+
+<footer style="text-align: center; font-size:12px">
+(c) Aditya K A, Shiv Nadar University
+
+</footer>
+
+
+
+
+
+
+	
+	<script>
+	
+		
+		function showart1() {
+		var a = document.getElementById("section1");
+
+		a.style.maxHeight="1000px";
+		var b = document.getElementById("button1");
+
+		b.style.display="none";
+
+
+		var c = document.getElementById("ads_links");
+
+		c.style.marginTop="-750px";
+
+		
+
+}
+
+
+		function showart2() {
+		var a = document.getElementById("section2");
+
+		a.style.maxHeight="1000px";
+		var b = document.getElementById("button2");
+
+		b.style.display="none";
+		
+		var c = document.getElementById("ads_links");
+
+		c.style.marginTop="-1000px";
+}
+
+		function showart3() {
+		var a = document.getElementById("section3");
+
+		a.style.maxHeight="1000px";
+		var b = document.getElementById("button3");
+
+		b.style.display="none";
+		
+		var c = document.getElementById("ads_links");
+
+		c.style.marginTop="-1250px";
+}
+
+	</script>
+
+</body>
+
+
+
+</html>
