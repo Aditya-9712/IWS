@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  
+  
+  	<link href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/main.js"></script>
+
+  
+</head>
+
+
+  <body>
+  
+  <h2>Click on any shape to start the Calculator !</h2>
+
+  <div class="shapes">
+    <div onclick="showcircle()" class="circle-button"></div>
+    <div onclick="showtriangle()" class="Triangle-button"></div>
+    <div onclick="showsquare()" class="Square-button"></div>
+    <div onclick="showrectangle()" class="Rectangle-button"></div>
+    <div onclick="showhexagon()" class="Hexagon-button"></div>
+  </div>
+
+  <div class="getdata1">
+    <label>Radius</label>
+    <input id="cradius" type="number" />
+  </div>
+  
+  <div class="getdata2">
+      	
+  	<label>Side 1</label>
+    <input id="tside1" type="number" />
+    <label>Side 2</label>
+    <input id="tside2" type="number" />
+    <label>Side 3</label>
+    <input id="tside3" type="number" />
+
+  </div>
+  
+  <div class="getdata3">
+    
+	<label>Side</label>
+    <input id="sside" type="number" />
+
+
+  </div>
+  
+  <div class="getdata4">
+
+    <label>Length</label>
+    <input id="rlength" type="number" />
+    <label>Breadth</label>
+    <input id="rbreadth" type="number" />
+
+  </div>
+  
+  <div class="getdata5">
+    <label>Side</label>
+    <input id="hside" type="number" />
+  </div>
+  
+  <div class="datacollect">
+  <h3>Enter the Relevant Details</h3>
+
+  </div>
+
+  <button onclick="calculate()"> Calculate </button>
+
+
+  <div class="datadisp">
+  <h3>Calculated Details</h3>
+
+  </div>
+
+  <div class="dispdata">
+    <label>Perimeter</label>
+    <input id="perimeter" type="number" disabled/>
+    <label>Area</label>
+    <input id="area" type="number" disabled />
+  </div>
+
+
+</body>
+  
+
+
+  
+</html>
